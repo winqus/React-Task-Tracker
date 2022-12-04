@@ -9,7 +9,7 @@
     {
       "text": "Shopping",
       "day": "Monday",
-      "reminder": false,
+      "reminder": true,
       "id": 1
     }
   ]
