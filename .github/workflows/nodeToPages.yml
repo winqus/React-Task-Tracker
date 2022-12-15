@@ -51,6 +51,10 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build-artifact
+      - shell: bash
+        run: ls -l
+      - shell: bash
+        run: tree
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
