@@ -52,6 +52,8 @@ jobs:
         with:
           name: build-artifact
       - shell: bash
+        run: pwd
+      - shell: bash
         run: ls -l
       - shell: bash
         run: tree
