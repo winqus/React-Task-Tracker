@@ -38,10 +38,6 @@ jobs:
         with:
           name: build-artifact
           path: build
-      - shell: bash
-        run: pwd
-      - shell: bash
-        run: ls -l
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -53,12 +49,6 @@ jobs:
         uses: actions/checkout@v3
       - name: Download build artifact
         uses: actions/download-artifact@v3
-      - shell: bash
-        run: pwd
-      - shell: bash
-        run: ls -l
-      - shell: bash
-        run: tree
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
